@@ -48,7 +48,7 @@ export default function Home() {
           />
           <button
             onClick={handleConvert}
-            disabled={loading}
+            disabled={loading || !url}
             className="rounded-lg bg-blue-600 px-8 py-3 font-bold text-white shadow-md hover:bg-blue-700 active:scale-95 transition-all disabled:bg-slate-400"
           >
             {loading ? "解析中..." : "Markdown変換"}
