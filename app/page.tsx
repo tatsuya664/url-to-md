@@ -68,7 +68,7 @@ export default function Home() {
                 }}
                 className="bg-emerald-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-emerald-600 transition-colors shadow-sm"
               >
-                Copy for AI / AI用にコピー
+                Copy
               </button>
             </div>
             <textarea
