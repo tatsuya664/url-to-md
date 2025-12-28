@@ -13,24 +13,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "URLtoMD | WebサイトをAI用Markdownに一瞬で変換",
-  description: "Webサイトから広告やノイズを除去し、ChatGPTやClaudeが読みやすいMarkdown形式に変換する無料ツールです。技術記事やニュースの解析に最適。",
-  keywords: ["URLtoMD","URL to Markdown","llmready","url-to-md","AI", "Markdown", "変換", "スクレイピング", "ChatGPT", "Claude", "Gemini","本文抽出","プロンプト"],
+  title: "URLtoMD | Convert Web URL to Markdown for AI",
+  description: "WebサイトをAI用Markdownに一瞬で変換。Convert Web URLs to clean Markdown for AI (ChatGPT/Claude/Gemini).",
+  keywords: ["URLtoMD", "URL to Markdown", "AI Markdown", "ChatGPT", "Claude", "RAG", "Markdown変換", "本文抽出"],
   verification: {
     google: "Taj3YFPakjSrUdzb41Ca6VwJ9JR5Sd4lLI4JEY9ZJsQ",
   },
   authors: [{ name: "Tatsuya Kawashima" }],
   openGraph: {
-    title: "AI-Reader.md",
-    description: "AIが読みやすいクリーンなMarkdownを、URLひとつで生成。",
+    title: "URLtoMD | AI-friendly Markdown Converter",
+    description: "WebサイトをAI用Markdownに一瞬で変換。Extract clean Markdown from any URL for AI.",
     type: "website",
-    url: "https://ai-reader-md.vercel.app/", 
-    siteName: "AI-Reader.md",
+    url: "https://urltomd-tool.vercel.app/", 
+    siteName: "URLtoMD",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI-Reader.md",
-    description: "WebサイトをAI用Markdownに一瞬で変換",
+    title: "URLtoMD",
+    description: "WebサイトをAI用Markdownに一瞬で変換 / Convert Web URLs to AI-friendly Markdown",
   },
 };
 
@@ -40,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
