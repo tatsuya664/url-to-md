@@ -1,5 +1,5 @@
 import { Readability } from '@mozilla/readability';
-import { JSDOM } from 'jsdom';
+import { parseHTML } from 'linkedom';
 import TurndownService from 'turndown';
 
 export async function convertWebToMarkdown(url: string) {
@@ -15,8 +15,12 @@ export async function convertWebToMarkdown(url: string) {
     }
 
     const html = await response.text();
-    const dom = new JSDOM(html, { url });
-    const reader = new Readability(dom.window.document);
+
+    // --- linkedom を使用した解析に切り替え ---
+    const { document } = parseHTML(html);
+    
+    // Readability に渡す形式に調整
+    const reader = new Readability(document as any);
     const article = reader.parse();
 
     if (!article || !article.content) {

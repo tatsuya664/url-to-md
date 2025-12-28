@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  serverExternalPackages: ['jsdom'],
+  /* 設定なし */
 };
 
 export default nextConfig;
