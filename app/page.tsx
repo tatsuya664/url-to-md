@@ -45,6 +45,7 @@ export default function Home() {
             className="flex-1 rounded-lg border border-slate-300 p-3 outline-none focus:ring-2 focus:ring-blue-500 transition-all"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
+            onFocus={(e) => e.target.select()}
           />
           <button
             onClick={handleConvert}
